@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Champions League Match Watch</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header class="top-bar">
+        <nav class="nav-buttons">
+            <a href="#hero" class="nav-btn">Home</a>
+            <a href="#matches" class="nav-btn">Matches</a>
+            <a href="#players" class="nav-btn">Players</a>
+            <a href="#vote" class="nav-btn">Vote</a>
+        </nav>
+    </header>
+
+    <main class="page-content">
+
+        <section id="hero" class="hero-section">
+            <img src="./assets/champions.jpg" alt="Champions League" class="hero-image">
+            <h1>Champions League Match Watch</h1>
+            <p class="hero-text">Pick your winner and check out the players to watch.</p>
+        </section>
+
+        <section class="grid-layout">
+
+            <div id="matches" class="card">
+                <div class="card-header">
+                    <h2>Remaining Matches</h2>
+                </div>
+                <div class="card-body">
+                    <ul>
+                        <li>Real Madrid vs Bayern Munich</li>
+                        <li>PSG vs Liverpool</li>
+                        <li>Sporting vs Arsenal</li>
+                        <li>Barcelona vs Atletico Madrid</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="players" class="card">
+                <div class="card-header">
+                    <h2>Players to Watch</h2>
+                </div>
+
+                <div class="card-body">
+                    <div class="players-grid">
+
+                        <div class="player-card">
+                            <img src="./assets/mbappe.jpg" alt="Kylian Mbappe">
+                            <h3>Mbappe</h3>
+                            <p>Real Madrid</p>
+                        </div>
+
+                        <div class="player-card">
+                            <img src="./assets/vinijr.jpg" alt="Vini Jr">
+                            <h3>Vini Jr</h3>
+                            <p>Real Madrid</p>
+                        </div>
+
+                        <div class="player-card">
+                            <img src="./assets/saka.jpg" alt="Bukayo Saka">
+                            <h3>Saka</h3>
+                            <p>Arsenal</p>
+                        </div>
+
+                        <div class="player-card">
+                            <img src="./assets/rice.jpg" alt="Declan Rice">
+                            <h3>Rice</h3>
+                            <p>Arsenal</p>
+                        </div>
+
+                        <div class="player-card">
+                            <img src="./assets/dembele.jpg" alt="Ousmane Dembele">
+                            <h3>Dembele</h3>
+                            <p>PSG</p>
+                        </div>
+
+                        <div class="player-card">
+                            <img src="./assets/harrykane.webp" alt="Harry Kane">
+                            <h3>Harry Kane</h3>
+                            <p>Bayern Munich</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div id="vote" class="card">
+                <div class="card-header">
+                    <h2>Pick Your Winner</h2>
+                </div>
+
+                <div class="card-body">
+
+                    <div class="button-group">
+                        <button data-team="Madrid">Madrid</button>
+                        <button data-team="PSG">PSG</button>
+                        <button data-team="Bayern">Bayern</button>
+                        <button data-team="Arsenal">Arsenal</button>
+                        <button data-team="Atletico">Atletico</button>
+                        <button data-team="Sporting">Sporting</button>
+                    </div>
+
+                    <p id="vote-result">Pick a team to vote!</p>
+
+                    <h3>Live Vote Count</h3>
+                    <ul id="vote-counts">
+                        <li>Madrid: <span id="Madrid-count">0</span></li>
+                        <li>PSG: <span id="PSG-count">0</span></li>
+                        <li>Bayern: <span id="Bayern-count">0</span></li>
+                        <li>Arsenal: <span id="Arsenal-count">0</span></li>
+                        <li>Atletico: <span id="Atletico-count">0</span></li>
+                        <li>Sporting: <span id="Sporting-count">0</span></li>
+                    </ul>
+
+                    <input type="text" id="fan-name" placeholder="Enter your fan name">
+
+                    <button id="toggle-players">Hide Players</button>
+                    <button id="change-theme">Change Theme</button>
+
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <p>Champions League Project</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
